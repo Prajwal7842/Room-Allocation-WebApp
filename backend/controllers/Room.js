@@ -78,8 +78,8 @@ export const addRoom = async (req, res) => {
     const newRoom = new Room(req.body);
 
     newRoom.save()
-        .then(() => res.json('User added!'))
-        .catch(err => res.status(400).json('Error: ' + err.message));
+        .then(() => res.status(201).json(newRoom))
+        .catch(err => res.status(400).json(err.message));
 }
 
 export const deleteRoom = async (req, res) => {
