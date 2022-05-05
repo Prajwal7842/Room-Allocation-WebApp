@@ -39,7 +39,6 @@ export const updateActivity = async (req,res) => {
 }
 
 export const deleteActivity = async (req, res) => {
-    // res.send('It works');
     try {
         const {id} = req.params;
         const deletedActivity = await Activity.findByIdAndDelete({_id:id})

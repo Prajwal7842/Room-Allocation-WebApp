@@ -8,7 +8,7 @@ dotenv.config();
 export const userList = async (req,res) => {
     try {
         const userdata = await User.find();
-        res.status(201).json(userdata)
+        res.status(200).json(userdata)
         console.log(userdata);
     } catch (error) {
         res.status(401).json(error);

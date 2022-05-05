@@ -3,6 +3,7 @@ const require = createRequire(import.meta.url);
 
 import app from "./server.js"
 const request = require('supertest');
+import {User} from "./models/User";
 import {Room} from "./models/Room";
 
 // Tested
@@ -32,6 +33,83 @@ describe("POST /activity/add", () => {
         })
     })  
 })
+
+// Testing User Model and Functions
+
+//Tested
+describe("Get /users/list", () => {
+    test("Status Code should be 200 and type should be json list", async () => {
+        const response = await request(app).get("/users/list");
+        // console.log(response);
+        expect(response.statusCode).toBe(200);
+        expect(response.type).toBe("application/json");
+    })
+})
+
+// Tested
+describe("Post /users/add", () => {
+    test("Status Code should be 201 and type should be json list", async () => {
+        const response = await request(app).post("/users/add").send({
+            username: "Test User",
+            usermail: "testuser@email.com",
+            password: "testPassword",
+            description: "Admin",
+            isAdmin: true,
+            createdAt: new Date()
+        })
+        // console.log(response)
+        expect(response.statusCode).toBe(201);
+        expect(response.type).toBe('application/json');
+    })
+})
+
+// Tested
+describe("POST /users/login", () => {
+    test("Status Code should be 200 and type should be json list", async () => {
+        const response = await request(app).post("/users/login").send({
+            username: "Test User",
+            usermail: "testuser@email.com",
+            password: "testPassword",
+        })
+        expect(response.statusCode).toBe(200);
+        expect(response.type).toBe('application/json');
+    })
+    test("Status Code should be 401 and type should be html text", async () => {
+        const response = await request(app).post("/users/login").send({
+            username: "Test User",
+            usermail: "testuser@email.com",
+            password: "test Password",
+        })
+        expect(response.statusCode).toBe(401);
+        expect(response.type).toBe('text/html');
+    })
+})
+
+describe("UPDATE /users/update/:id", () => {
+    test("Should be status Code 201", async () => {
+        const users = await User.findOne({username: "Test User"});
+        const id = users._id;
+        const response = await request(app).patch(`/users/update/${id}`).send({
+            username: "Test User Updated",
+            usermail: "testuserUpdated@email.com",
+            password: "testPassword",
+        })
+        expect(response.statusCode).toBe(201);
+    })
+})
+
+// Tested
+describe("DELETE /users/delete/:id", () => {
+    test("Should be status Code 201", async () => {
+        const user = await User.findOne({username: "Test User Updated"});
+        const id = user._id;
+        const response = await request(app).delete(`/users/delete/${id}`);
+        expect(response.type).toBe("application/json");
+        expect(response.statusCode).toBe(201);
+    })
+})
+
+// Testing Room Model and Functions
 
 // Tested
 describe("Get /rooms", () => {
@@ -66,7 +144,7 @@ describe("POST /rooms/add", () => {
 })
 
 // Tested
-describe("UPDATE /rrom/delete/:id", () => {
+describe("UPDATE /room/update/:id", () => {
     test("Should be status Code 201", async () => {
         const room = await Room.findOne({roomNumber: "TestRoom"});
         const id = room._id;
@@ -88,3 +166,5 @@ describe("DELETE /rooms/delete/:id", () => {
         expect(response.statusCode).toBe(201);
     })
 })
+
+
