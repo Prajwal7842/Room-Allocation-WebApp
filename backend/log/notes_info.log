@@ -1,0 +1,209 @@
+[2022-05-08T11:29:09.482] [INFO] info - Server connected on port: 5000
+[2022-05-08T11:29:25.695] [INFO] info - Server connected on port: 5000
+[2022-05-08T11:30:29.621] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:00:15.784] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:08:40.886] [INFO] info - Request GET /activity/
+[2022-05-08T12:08:45.408] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:08:45.960] [INFO] info - Request POST /activity/add
+[2022-05-08T12:08:50.921] [INFO] info - Request GET /users/list
+[2022-05-08T12:08:54.085] [INFO] info - Request GET /activity/ Status code 200 OK
+[2022-05-08T12:08:54.096] [INFO] info - Request POST /activity/add Status code 201 OK
+[2022-05-08T12:08:55.927] [INFO] info - Request POST /users/add
+[2022-05-08T12:08:58.110] [INFO] info - Request GET /users/list Status 200 OK
+[2022-05-08T12:08:58.798] [INFO] info - Request POST /users/add Status 201 OK
+[2022-05-08T12:08:58.817] [INFO] info - Request POST /users/login
+[2022-05-08T12:09:00.329] [INFO] info - Request POST /users/login
+[2022-05-08T12:09:06.242] [INFO] info - Request POST /users/update/:id
+[2022-05-08T12:09:07.037] [INFO] info - Request POST /users/update/:id Status 201 OK
+[2022-05-08T12:09:07.438] [INFO] info - Request DELETE /users/delete/:id
+[2022-05-08T12:09:07.849] [INFO] info - Request POST /users/delete/:id Status 201 OK
+[2022-05-08T12:09:07.870] [INFO] info - Request GET /rooms/
+[2022-05-08T12:09:08.274] [INFO] info - Request GET /rooms/ Status 201 OK
+[2022-05-08T12:09:08.297] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:09:09.594] [INFO] info - Request POST /rooms/add Status 201 OK
+[2022-05-08T12:09:09.602] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:09:11.574] [INFO] info - Request PATCH /rooms/update/:id
+[2022-05-08T12:09:12.379] [INFO] info - Request POST /rooms/update/:id Status 201 OK
+[2022-05-08T12:09:13.200] [INFO] info - Request DELETE /rooms/delete/:id
+[2022-05-08T12:09:14.123] [INFO] info - Request DELETE /rooms/delete/:id Status 201 OK
+[2022-05-08T12:09:42.710] [INFO] info - Request GET /activity/
+[2022-05-08T12:09:47.754] [INFO] info - Request POST /activity/add
+[2022-05-08T12:09:48.140] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:09:52.738] [INFO] info - Request GET /users/list
+[2022-05-08T12:09:56.983] [INFO] info - Request GET /activity/ Status code 200 OK
+[2022-05-08T12:09:56.993] [INFO] info - Request POST /activity/add Status code 201 OK
+[2022-05-08T12:09:57.743] [INFO] info - Request POST /users/add
+[2022-05-08T12:10:01.069] [INFO] info - Request GET /users/list Status 200 OK
+[2022-05-08T12:10:01.878] [INFO] info - Request POST /users/add Status 201 OK
+[2022-05-08T12:10:01.897] [INFO] info - Request POST /users/login
+[2022-05-08T12:10:02.706] [INFO] info - Request POST /users/login
+[2022-05-08T12:10:08.117] [INFO] info - Request POST /users/update/:id
+[2022-05-08T12:10:09.117] [INFO] info - Request POST /users/update/:id Status 201 OK
+[2022-05-08T12:10:09.514] [INFO] info - Request DELETE /users/delete/:id
+[2022-05-08T12:10:10.151] [INFO] info - Request POST /users/delete/:id Status 201 OK
+[2022-05-08T12:10:10.169] [INFO] info - Request GET /rooms/
+[2022-05-08T12:10:10.987] [INFO] info - Request GET /rooms/ Status 201 OK
+[2022-05-08T12:10:11.006] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:10:11.966] [INFO] info - Request POST /rooms/add Status 201 OK
+[2022-05-08T12:10:11.986] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:10:12.954] [INFO] info - Request PATCH /rooms/update/:id
+[2022-05-08T12:10:13.749] [INFO] info - Request POST /rooms/update/:id Status 201 OK
+[2022-05-08T12:10:14.159] [INFO] info - Request DELETE /rooms/delete/:id
+[2022-05-08T12:10:14.561] [INFO] info - Request DELETE /rooms/delete/:id Status 201 OK
+[2022-05-08T12:11:36.788] [INFO] info - Request GET /activity/
+[2022-05-08T12:11:41.805] [INFO] info - Request POST /activity/add
+[2022-05-08T12:11:46.250] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:11:46.786] [INFO] info - Request GET /users/list
+[2022-05-08T12:11:51.794] [INFO] info - Request POST /users/add
+[2022-05-08T12:11:52.171] [INFO] info - Request GET /activity/ Status code 200 OK
+[2022-05-08T12:11:52.184] [INFO] info - Request POST /activity/add Status code 201 OK
+[2022-05-08T12:11:55.224] [INFO] info - Request GET /users/list Status 200 OK
+[2022-05-08T12:11:56.343] [INFO] info - Request POST /users/add Status 201 OK
+[2022-05-08T12:11:56.361] [INFO] info - Request POST /users/login
+[2022-05-08T12:11:57.175] [INFO] info - Request POST /users/login
+[2022-05-08T12:12:02.597] [INFO] info - Request POST /users/update/:id
+[2022-05-08T12:12:03.395] [INFO] info - Request POST /users/update/:id Status 201 OK
+[2022-05-08T12:12:03.804] [INFO] info - Request DELETE /users/delete/:id
+[2022-05-08T12:12:04.208] [INFO] info - Request POST /users/delete/:id Status 201 OK
+[2022-05-08T12:12:04.227] [INFO] info - Request GET /rooms/
+[2022-05-08T12:12:04.639] [INFO] info - Request GET /rooms/ Status 201 OK
+[2022-05-08T12:12:04.683] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:12:05.481] [INFO] info - Request POST /rooms/add Status 201 OK
+[2022-05-08T12:12:05.497] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:12:06.767] [INFO] info - Request PATCH /rooms/update/:id
+[2022-05-08T12:12:07.573] [INFO] info - Request POST /rooms/update/:id Status 201 OK
+[2022-05-08T12:12:07.988] [INFO] info - Request DELETE /rooms/delete/:id
+[2022-05-08T12:12:08.397] [INFO] info - Request DELETE /rooms/delete/:id Status 201 OK
+[2022-05-08T12:15:09.055] [INFO] info - Request GET /activity/
+[2022-05-08T12:15:14.099] [INFO] info - Request POST /activity/add
+[2022-05-08T12:15:16.162] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:15:19.075] [INFO] info - Request GET /users/list
+[2022-05-08T12:15:22.931] [INFO] info - Request GET /activity/ Status code 200 OK
+[2022-05-08T12:15:22.942] [INFO] info - Request POST /activity/add Status code 201 OK
+[2022-05-08T12:15:24.086] [INFO] info - Request POST /users/add
+[2022-05-08T12:15:25.772] [INFO] info - Request GET /users/list Status 200 OK
+[2022-05-08T12:15:26.427] [INFO] info - Request POST /users/add Status 201 OK
+[2022-05-08T12:15:26.445] [INFO] info - Request POST /users/login
+[2022-05-08T12:15:27.790] [INFO] info - Request POST /users/login
+[2022-05-08T12:15:33.204] [INFO] info - Request POST /users/update/:id
+[2022-05-08T12:15:34.060] [INFO] info - Request POST /users/update/:id Status 201 OK
+[2022-05-08T12:15:35.348] [INFO] info - Request DELETE /users/delete/:id
+[2022-05-08T12:15:35.740] [INFO] info - Request POST /users/delete/:id Status 201 OK
+[2022-05-08T12:15:35.748] [INFO] info - Request GET /rooms/
+[2022-05-08T12:15:36.153] [INFO] info - Request GET /rooms/ Status 201 OK
+[2022-05-08T12:15:36.165] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:15:36.954] [INFO] info - Request POST /rooms/add Status 201 OK
+[2022-05-08T12:15:36.968] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:15:38.726] [INFO] info - Request PATCH /rooms/update/:id
+[2022-05-08T12:15:39.510] [INFO] info - Request POST /rooms/update/:id Status 201 OK
+[2022-05-08T12:15:39.915] [INFO] info - Request DELETE /rooms/delete/:id
+[2022-05-08T12:15:40.315] [INFO] info - Request DELETE /rooms/delete/:id Status 201 OK
+[2022-05-08T12:17:35.792] [INFO] info - Request GET /activity/
+[2022-05-08T12:17:40.807] [INFO] info - Request POST /activity/add
+[2022-05-08T12:17:42.868] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:17:45.786] [INFO] info - Request GET /users/list
+[2022-05-08T12:17:50.796] [INFO] info - Request POST /users/add
+[2022-05-08T12:17:50.857] [INFO] info - Request GET /activity/ Status code 200 OK
+[2022-05-08T12:17:50.868] [INFO] info - Request POST /activity/add Status code 201 OK
+[2022-05-08T12:17:53.388] [INFO] info - Request GET /users/list Status 200 OK
+[2022-05-08T12:17:54.043] [INFO] info - Request POST /users/add Status 201 OK
+[2022-05-08T12:17:54.062] [INFO] info - Request POST /users/login
+[2022-05-08T12:17:55.051] [INFO] info - Request POST /users/login
+[2022-05-08T12:17:56.539] [INFO] info - Request POST /users/update/:id
+[2022-05-08T12:17:57.556] [INFO] info - Request POST /users/update/:id Status 201 OK
+[2022-05-08T12:17:58.063] [INFO] info - Request DELETE /users/delete/:id
+[2022-05-08T12:17:58.466] [INFO] info - Request POST /users/delete/:id Status 201 OK
+[2022-05-08T12:17:58.476] [INFO] info - Request GET /rooms/
+[2022-05-08T12:17:58.880] [INFO] info - Request GET /rooms/ Status 201 OK
+[2022-05-08T12:17:58.890] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:18:00.387] [INFO] info - Request POST /rooms/add Status 201 OK
+[2022-05-08T12:18:00.406] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:18:01.562] [INFO] info - Request PATCH /rooms/update/:id
+[2022-05-08T12:18:02.354] [INFO] info - Request POST /rooms/update/:id Status 201 OK
+[2022-05-08T12:18:03.112] [INFO] info - Request DELETE /rooms/delete/:id
+[2022-05-08T12:18:03.507] [INFO] info - Request DELETE /rooms/delete/:id Status 201 OK
+[2022-05-08T12:18:52.765] [INFO] info - Request GET /activity/
+[2022-05-08T12:18:57.810] [INFO] info - Request POST /activity/add
+[2022-05-08T12:18:59.395] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:19:02.784] [INFO] info - Request GET /users/list
+[2022-05-08T12:19:07.399] [INFO] info - Request POST /activity/add Status code 201 OK
+[2022-05-08T12:19:07.796] [INFO] info - Request POST /users/add
+[2022-05-08T12:19:09.542] [INFO] info - Request GET /users/list Status 200 OK
+[2022-05-08T12:19:10.225] [INFO] info - Request POST /users/add Status 201 OK
+[2022-05-08T12:19:10.242] [INFO] info - Request POST /users/login
+[2022-05-08T12:19:11.059] [INFO] info - Request POST /users/login
+[2022-05-08T12:19:12.268] [INFO] info - Request POST /users/update/:id
+[2022-05-08T12:19:13.273] [INFO] info - Request POST /users/update/:id Status 201 OK
+[2022-05-08T12:19:13.729] [INFO] info - Request DELETE /users/delete/:id
+[2022-05-08T12:19:14.284] [INFO] info - Request POST /users/delete/:id Status 201 OK
+[2022-05-08T12:19:14.299] [INFO] info - Request GET /rooms/
+[2022-05-08T12:19:14.952] [INFO] info - Request GET /rooms/ Status 201 OK
+[2022-05-08T12:19:14.963] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:19:16.562] [INFO] info - Request POST /rooms/add Status 201 OK
+[2022-05-08T12:19:16.578] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:19:17.389] [INFO] info - Request PATCH /rooms/update/:id
+[2022-05-08T12:19:18.262] [INFO] info - Request POST /rooms/update/:id Status 201 OK
+[2022-05-08T12:19:18.684] [INFO] info - Request DELETE /rooms/delete/:id
+[2022-05-08T12:19:19.085] [INFO] info - Request DELETE /rooms/delete/:id Status 201 OK
+[2022-05-08T12:20:09.834] [INFO] info - Request GET /activity/
+[2022-05-08T12:20:14.865] [INFO] info - Request POST /activity/add
+[2022-05-08T12:20:16.844] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:20:19.845] [INFO] info - Request GET /users/list
+[2022-05-08T12:20:23.629] [INFO] info - Request POST /activity/add Status code 201 OK
+[2022-05-08T12:20:25.763] [INFO] info - Request GET /users/list Status 200 OK
+[2022-05-08T12:21:53.477] [INFO] info - Request POST /activity/add
+[2022-05-08T12:21:56.565] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:21:58.453] [INFO] info - Request GET /users/list
+[2022-05-08T12:22:02.935] [INFO] info - Request POST /activity/add Status code 201 OK
+[2022-05-08T12:22:06.774] [INFO] info - Request GET /users/list Status 200 OK
+[2022-05-08T12:23:03.490] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:23:04.040] [INFO] info - Request POST /activity/add
+[2022-05-08T12:23:04.129] [INFO] info - Request POST /activity/add Status code 201 OK
+[2022-05-08T12:23:04.142] [INFO] info - Request GET /users/list
+[2022-05-08T12:23:04.184] [INFO] info - Request GET /users/list Status 200 OK
+[2022-05-08T12:23:32.436] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:23:32.924] [INFO] info - Request POST /activity/add
+[2022-05-08T12:23:32.979] [INFO] info - Request POST /activity/add Status code 201 OK
+[2022-05-08T12:23:32.994] [INFO] info - Request GET /users/list
+[2022-05-08T12:23:33.033] [INFO] info - Request GET /users/list Status 200 OK
+[2022-05-08T12:23:33.062] [INFO] info - Request POST /users/add
+[2022-05-08T12:23:33.437] [INFO] info - Request POST /users/add Status 201 OK
+[2022-05-08T12:23:33.447] [INFO] info - Request POST /users/login
+[2022-05-08T12:23:33.896] [INFO] info - Request POST /users/login
+[2022-05-08T12:23:34.399] [INFO] info - Request POST /users/update/:id
+[2022-05-08T12:23:34.479] [INFO] info - Request POST /users/update/:id Status 201 OK
+[2022-05-08T12:23:34.517] [INFO] info - Request DELETE /users/delete/:id
+[2022-05-08T12:23:34.558] [INFO] info - Request POST /users/delete/:id Status 201 OK
+[2022-05-08T12:23:34.571] [INFO] info - Request GET /rooms/
+[2022-05-08T12:23:34.618] [INFO] info - Request GET /rooms/ Status 201 OK
+[2022-05-08T12:23:34.635] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:23:34.711] [INFO] info - Request POST /rooms/add Status 201 OK
+[2022-05-08T12:23:34.720] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:23:34.803] [INFO] info - Request PATCH /rooms/update/:id
+[2022-05-08T12:23:34.875] [INFO] info - Request POST /rooms/update/:id Status 201 OK
+[2022-05-08T12:23:34.914] [INFO] info - Request DELETE /rooms/delete/:id
+[2022-05-08T12:23:34.954] [INFO] info - Request DELETE /rooms/delete/:id Status 201 OK
+[2022-05-08T12:24:02.151] [INFO] info - Request GET /activity/
+[2022-05-08T12:24:02.677] [INFO] info - Server connected on port: 5000
+[2022-05-08T12:24:03.492] [INFO] info - Request GET /activity/ Status code 200 OK
+[2022-05-08T12:24:03.558] [INFO] info - Request POST /activity/add
+[2022-05-08T12:24:03.649] [INFO] info - Request POST /activity/add Status code 201 OK
+[2022-05-08T12:24:03.669] [INFO] info - Request GET /users/list
+[2022-05-08T12:24:03.704] [INFO] info - Request GET /users/list Status 200 OK
+[2022-05-08T12:24:03.735] [INFO] info - Request POST /users/add
+[2022-05-08T12:24:04.215] [INFO] info - Request POST /users/add Status 201 OK
+[2022-05-08T12:24:04.230] [INFO] info - Request POST /users/login
+[2022-05-08T12:24:04.759] [INFO] info - Request POST /users/login
+[2022-05-08T12:24:05.249] [INFO] info - Request POST /users/update/:id
+[2022-05-08T12:24:05.455] [INFO] info - Request POST /users/update/:id Status 201 OK
+[2022-05-08T12:24:05.508] [INFO] info - Request DELETE /users/delete/:id
+[2022-05-08T12:24:05.625] [INFO] info - Request POST /users/delete/:id Status 201 OK
+[2022-05-08T12:24:05.633] [INFO] info - Request GET /rooms/
+[2022-05-08T12:24:05.703] [INFO] info - Request GET /rooms/ Status 201 OK
+[2022-05-08T12:24:05.721] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:24:05.801] [INFO] info - Request POST /rooms/add Status 201 OK
+[2022-05-08T12:24:05.809] [INFO] info - Request POST /rooms/add
+[2022-05-08T12:24:05.905] [INFO] info - Request PATCH /rooms/update/:id
+[2022-05-08T12:24:06.009] [INFO] info - Request POST /rooms/update/:id Status 201 OK
+[2022-05-08T12:24:06.056] [INFO] info - Request DELETE /rooms/delete/:id
+[2022-05-08T12:24:06.191] [INFO] info - Request DELETE /rooms/delete/:id Status 201 OK

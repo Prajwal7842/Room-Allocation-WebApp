@@ -15,6 +15,7 @@ import EditRoom from "./components/editRoom";
 
 const App = () => {
     return (
+      <div id="root">
       <Router>
         <div className="container">
             <NavBar/>
@@ -32,6 +33,7 @@ const App = () => {
             </Routes>
         </div>
       </Router>
+      </div>
     );
   }
 export default App;

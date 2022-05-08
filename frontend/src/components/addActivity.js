@@ -38,7 +38,7 @@ const AddActivity = () => {
             .catch(error => console.log(error)); 
     };
     return (
-        <div className="container">
+        <div>
             <h2>Request Room</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">

@@ -5,6 +5,7 @@ import app from "./server.js"
 const request = require('supertest');
 import {User} from "./models/User";
 import {Room} from "./models/Room";
+console.log(app);
 
 // Tested
 describe("Get /activity", () => {
@@ -166,5 +167,4 @@ describe("DELETE /rooms/delete/:id", () => {
         expect(response.statusCode).toBe(201);
     })
 })
-
 

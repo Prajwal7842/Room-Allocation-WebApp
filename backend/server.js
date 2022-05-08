@@ -2,6 +2,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
+import { infoLogger } from './logger.js';
+import { errorLogger } from './logger.js';
 
 const app = express();
 
@@ -24,8 +26,8 @@ const CONNECTION_URL = "mongodb+srv://Sahajdb:Sahajdb08@cluster0.ashgs.mongodb.n
 const PORT = process.env.PORT | 5000;
 
 mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true})
-    .then(() => app.listen(PORT, () => {}))
-    .catch((error) => console.log(error.message));
+    .then(() => app.listen(PORT, () => {infoLogger.info(`Server connected on port: ${PORT}`)}))
+    .catch((error) => errorLogger.info(`Error occurrent while starting server: ${error.message}`));
 
 
 export default app;

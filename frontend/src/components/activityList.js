@@ -49,7 +49,7 @@ const ActivityList = () => {
     }, []);
     console.log(activityList, isAuthenticated, isAdmin);
     return (
-        <>       
+        <div id="activity-list-testid">       
         <Container>
             <div className="mb-3">
                     <label htmlFor="Filter Requests" className="form-label">Filter Requests</label>
@@ -86,8 +86,7 @@ const ActivityList = () => {
                 <></>
                 }      
             </Container>       
-        </>
-        
+        </div>
     );
 }
 
