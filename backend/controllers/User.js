@@ -14,7 +14,7 @@ export const userList = async (req,res) => {
         res.status(200).json(userdata)
         console.log(userdata);
     } catch (error) {
-        errorLogger.info(`Request GET /users/list failed: ${error.message}`)
+        errorLogger.error(`Request GET /users/list failed: ${error.message}`)
         res.status(401).json(error);
     }
 }
@@ -31,7 +31,7 @@ export const editUser = async (req,res) => {
         res.status(201).json(user)
 
     } catch (error) {
-        errorLogger.info(`Request POST /users/edit/:id failed: ${error.message}`)
+        errorLogger.error(`Request POST /users/edit/:id failed: ${error.message}`)
         res.status(401).json(error);
     }
 }
@@ -43,7 +43,7 @@ export const updateUser = async (req,res) => {
 
         const userExist = await User.findOne({ usermail:req.body.usermail })
         if(userExist){
-            errorLogger.info(`Request POST /users/update/:id failed: User already exists with given email`)
+            errorLogger.error(`Request POST /users/update/:id failed: User already exists with given email`)
             res.status(401).send("User already exists with given email");
         }
         else{
@@ -54,7 +54,7 @@ export const updateUser = async (req,res) => {
         }
 
     } catch (error) {
-        errorLogger.info(`Request POST /users/update/:id failed: ${error.message}`)
+        errorLogger.error(`Request POST /users/update/:id failed: ${error.message}`)
         res.status(401).json(error);
     }
 }
@@ -74,14 +74,14 @@ export const getUser = async (req, res) => {
             infoLogger.info("Request GET /users/ Status 201 OK");
             res.status(201).send({user:userdata});
         } catch (error) {
-            errorLogger.info(`Request GET /users/ failed: ${error.message}`)
+            errorLogger.error(`Request GET /users/ failed: ${error.message}`)
             console.log(error)
             res.status(401)
             // throw new Error('Not authorized')
         }
     }
     else {
-        errorLogger.info(`Request POST /users/edit/:id failed: No Token`)
+        errorLogger.error(`Request POST /users/edit/:id failed: No Token`)
         res.status(401).send("No token!");
         // throw new Error('Not authorized, no token')
     }
@@ -99,7 +99,7 @@ export const addUser = async (req, res) => {
     // const isAdmin = req.body.isAdmin;
     
     if (!username || !usermail || !password) {
-        errorLogger.info(`Request POST /users/add failed with status 401: Incomplete params.`)
+        errorLogger.error(`Request POST /users/add failed with status 401: Incomplete params.`)
         res.status(401)
         // throw new Error('Please add all fields')
     }
@@ -108,7 +108,7 @@ export const addUser = async (req, res) => {
     const userExists = await User.findOne({ usermail:usermail })
     console.log(userExists);
     if (userExists) {
-        errorLogger.info(`Request POST /users/add failed with status 401: User already exists.`)
+        errorLogger.error(`Request POST /users/add failed with status 401: User already exists.`)
         return res.status(401).send("User already exists.")
         // throw new Error('User already exists')
     }
@@ -127,7 +127,7 @@ export const addUser = async (req, res) => {
         res.status(201).send({msg:'User added!',newUser});
     })
     .catch(err => {
-        errorLogger.info(`Request POST /users/add failed with status 401: ${err.message}`);
+        errorLogger.error(`Request POST /users/add failed with status 401: ${err.message}`);
         res.status(401).send('Error: ' + err.message);
     });
     // return res.json({msg:"we are inside"});
@@ -144,7 +144,7 @@ export const deleteUser = async (req, res) => {
         res.status(201).json(deletedUser);
 
     } catch (error) {
-        errorLogger.info(`Request POST /users/delete/:id failed with status 401: ${err.message}`);
+        errorLogger.error(`Request POST /users/delete/:id failed with status 401: ${err.message}`);
         res.status(401).json(error);
     }
 }
@@ -172,7 +172,7 @@ export const loginUser = async (req, res) => {
             token: token,
         })
     } else {
-        errorLogger.info(`Request POST /users/login failed with status 401: No User found`);
+        errorLogger.error(`Request POST /users/login failed with status 401: No User found`);
         res.status(401).send("No user found");
     //   throw new Error('Invalid credentials')
     }

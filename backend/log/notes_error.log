@@ -1,0 +1,3 @@
+[2022-05-10T10:52:41.877] [ERROR] error - Server connected on port: 5000
+[2022-05-10T10:55:27.487] [ERROR] error - Request POST /users/login failed with status 401: No User found
+[2022-05-10T10:55:28.250] [ERROR] error - Request POST /rooms/add failed: Room already Exists.

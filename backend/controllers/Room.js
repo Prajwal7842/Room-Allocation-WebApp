@@ -10,7 +10,7 @@ export const roomList = async (req,res) => {
         res.status(201).json(roomdata)
         console.log(roomdata);
     } catch (error) {
-        errorLogger.info(`Request GET /rooms/list failed with status code 401: ${error.message}`)
+        errorLogger.error(`Request GET /rooms/list failed with status code 401: ${error.message}`)
         res.status(401).json(error);
     }
 }
@@ -27,7 +27,7 @@ export const editRoom = async (req,res) => {
         res.status(201).json(room)
 
     } catch (error) {
-        errorLogger.info(`Request POST /rooms/edit/:id failed with status code 401: ${error.message}`)
+        errorLogger.error(`Request POST /rooms/edit/:id failed with status code 401: ${error.message}`)
         res.status(401).json(error);
     }
 }
@@ -39,7 +39,7 @@ export const updateRoom = async (req,res) => {
         const roomExists = await Room.findOne(req.body)
         console.log(roomExists);
         if (roomExists) {
-            errorLogger.info(`Request PATCH /rooms/update/:id failed with status code 401: Room Already Exists.`)
+            errorLogger.error(`Request PATCH /rooms/update/:id failed with status code 401: Room Already Exists.`)
             res.status(401).send("Room already Exists.");
             // throw new Error('Room already exists')
         }
@@ -50,7 +50,7 @@ export const updateRoom = async (req,res) => {
             res.status(201).json(updatedRoom);
         }
     } catch (error) {
-        errorLogger.info(`Update failed with status code 401: ${error.message}`)
+        errorLogger.error(`Update failed with status code 401: ${error.message}`)
         res.status(401).json(error);
     }
 }
@@ -64,7 +64,7 @@ export const getRoom = async (req, res) => {
         res.status(200).json(rooms);
     }
     catch(error) {
-        errorLogger.info(`Request GET /rooms/ failed with status code 401: ${error.message}`)
+        errorLogger.error(`Request GET /rooms/ failed with status code 401: ${error.message}`)
         console.log({message: error.message});
         res.status(401).json(error.message);
     }
@@ -85,7 +85,7 @@ export const addRoom = async (req, res) => {
     const roomExists = await Room.findOne(req.body)
     console.log(roomExists);
     if (roomExists) {
-        errorLogger.info(`Request POST /rooms/add failed: Room already Exists.`)
+        errorLogger.error(`Request POST /rooms/add failed: Room already Exists.`)
         return res.status(401).send("Room already Exists")
         // throw new Error('Room already exists')
     }
@@ -99,7 +99,7 @@ export const addRoom = async (req, res) => {
             res.status(201).json(newRoom)
         })
         .catch(err => {
-            errorLogger.info(`Request POST /rooms/add failed with status code 400: ${err.message}`);
+            errorLogger.error(`Request POST /rooms/add failed with status code 400: ${err.message}`);
             res.status(400).json(err.message);
         });
 }
@@ -115,7 +115,7 @@ export const deleteRoom = async (req, res) => {
         res.status(201).json(deletedRoom);
 
     } catch (error) {
-        errorLogger.info(`Request DELETE /rooms/delete/:id failed with status code 401: ${error.message}`)
+        errorLogger.error(`Request DELETE /rooms/delete/:id failed with status code 401: ${error.message}`)
         res.status(401).json(error);
     }
 }

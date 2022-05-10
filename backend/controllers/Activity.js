@@ -11,7 +11,7 @@ export const getActivityList = async (req, res) => {
         res.status(200).json(activities);
     }
     catch(error) {
-        errorLogger.info(`Request GET /activity/ failed with status code 401: ${error.message}`)
+        errorLogger.error(`Request GET /activity/ failed with status code 401: ${error.message}`)
         console.log({message: error.message});
         res.status(401).json(error.message);
     }
@@ -28,7 +28,7 @@ export const addActivity = async (req, res) => {
         res.status(201).json(newActivity);
     }
     catch (error) {
-        errorLogger.info(`Request POST /activity/add failed with staus code 401: ${error.message}`)
+        errorLogger.error(`Request POST /activity/add failed with staus code 401: ${error.message}`)
         res.status(401).json({message: error.message});
     }
 }
@@ -45,7 +45,7 @@ export const updateActivity = async (req,res) => {
         res.status(201).json(updatedActivity);
 
     } catch (error) {
-        errorLogger.info(`Request POST /activity/update:id failed with status code 401: ${error.message}`)
+        errorLogger.error(`Request POST /activity/update:id failed with status code 401: ${error.message}`)
         res.status(401).json(error);
     }
 }
@@ -60,7 +60,7 @@ export const deleteActivity = async (req, res) => {
         res.status(201).json(deletedActivity);
 
     } catch (error) {
-        errorLogger.info(`Request DELETE /activity/delete:id failed wtih status code 401: ${error.message}`)
+        errorLogger.error(`Request DELETE /activity/delete:id failed wtih status code 401: ${error.message}`)
         res.status(401).json(error);
     }
 }
