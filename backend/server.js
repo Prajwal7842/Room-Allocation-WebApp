@@ -26,8 +26,7 @@ const CONNECTION_URL = "mongodb+srv://Sahajdb:Sahajdb08@cluster0.ashgs.mongodb.n
 const PORT = process.env.PORT | 5000;
 
 mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true})
-    .then(() => app.listen(PORT, () => {infoLogger.info(`Server connected on port: ${PORT}`)}))
-    .catch((error) => errorLogger.info(`Error occurrent while starting server: ${error.message}`));
-
+    .then(() => app.listen(PORT, () => {errorLogger.info(`Server connected on port: ${PORT}`)}))
+    .catch((error) => errorLogger.error(`Error occurrent while starting server: ${error.message}`));
 
 export default app;

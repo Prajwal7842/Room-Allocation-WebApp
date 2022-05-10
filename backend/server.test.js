@@ -5,7 +5,9 @@ import app from "./server.js"
 const request = require('supertest');
 import {User} from "./models/User";
 import {Room} from "./models/Room";
+import Activity from "./models/Activity.js";
 console.log(app);
+
 
 // Tested
 describe("Get /activity", () => {
@@ -33,6 +35,16 @@ describe("POST /activity/add", () => {
             expect(response.statusCode).toBe(201);
         })
     })  
+})
+
+describe("DELETE /activity/delete/:id", () => {
+    test("Should be status Code 201", async () => {
+        const activity = await Activity.findOne({applicant: "Applicant Name"});
+        const id = activity._id;
+        const response = await request(app).delete(`/activity/delete/${id}`);
+        expect(response.type).toBe("application/json");
+        expect(response.statusCode).toBe(201);
+    })
 })
 
 // Testing User Model and Functions
@@ -167,4 +179,3 @@ describe("DELETE /rooms/delete/:id", () => {
         expect(response.statusCode).toBe(201);
     })
 })
-
